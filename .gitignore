@@ -1,3 +1,7 @@
+
+# ignore webstorm created folder
+.idea/**
+
 # Logs
 logs
 *.log
