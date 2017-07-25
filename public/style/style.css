@@ -1,0 +1,341 @@
+body {
+    height:100vh;
+    width: 100%;
+}
+
+table, tbody, th, td, tr{
+    height: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+/* MAIN STYLESHEET TEMPLATE ================================================ */
+
+#wrapper {
+    height:100vh;
+    position:relative;
+}
+#header {
+    height: 7vh;
+    background: #367ABD;
+
+}
+#content {
+    position: relative;
+    height: calc(100% - 100px);
+    width: 100%;
+}
+
+#left-column{
+    background-color: #eaeaea;
+}
+
+#right-column{
+    background-color: #dddddd;
+}
+
+#footer {
+    display: block;
+    position: relative;
+    height:50px;
+    bottom:0;
+    left:0;
+    background: #367ABD;
+}
+
+/* NAVBAR STYLE ========================================================= */
+
+.navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+    border-style: none;
+    
+    background-color: #367ABD;
+}
+
+.navbar-brand img{
+    position: absolute;
+    top: 5px;
+    height: 40px;
+}
+
+.navbar-right{
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+
+.navbar-default .navbar-nav > li{
+    background-color: #FF8C00;
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a{
+    display: block;
+    color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.navbar-default .navbar-nav > li a:hover{
+    background-color: #ECD83B;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-default .navbar-nav > li a:active{
+    background-color: #AF8F14;
+    color: white;
+    text-decoration: none;
+}
+
+/* REGISTRATION & LOGIN STYLE ================================================ */
+.submit-form{
+    padding-top: 15px;
+    height: 30%;
+    color: #696969;
+}
+
+.content-header{
+    width: 50%;
+    height: 40px;
+    padding-top: 7px;
+    margin: 0 auto;
+
+    color: white;
+    background-color: #367ABD;
+
+    border-radius: 3px;
+    box-shadow: 0px 5px 10px #b0b0b0;
+}
+
+.submit-form-fields{
+    height: 40px;
+    padding-top: 20px;
+}
+
+.submit-form-fields label{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.submit-form-fields input{
+    border-style: none;
+    border-bottom: 1px solid #FF8C00;
+}
+
+.submit-form-fields-submit{
+    height: 50px;
+    margin-top: 150px;
+}
+
+.reg-margin{
+    margin-top: 310px;
+}
+
+/* BUTTONS ================================================== */
+
+.button-section{
+    padding-top: 20px;
+}
+
+.button-section #submit{
+    background-color: #FF8C00;
+    border-style: none;
+    border-radius: 3px;
+    padding: 7px;
+    color: white;
+}
+
+#submit:hover{
+    background-color: #ECD83B;
+    color: white;
+    text-decoration: none;
+}
+
+#submit:active{
+    background-color: #AF8F14;
+    color: white;
+    text-decoration: none;
+}
+
+/* PROJECT LIST & TRANSACTION LIST ===================================== */
+
+.scroll-area{
+    display: block;
+    float:left;
+    overflow-y:scroll;
+}
+
+.scroll-area::-webkit-scrollbar-track
+{
+    background-color: #F5F5F5;
+}
+
+.scroll-area::-webkit-scrollbar
+{
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+.scroll-area::-webkit-scrollbar-thumb
+{
+    background-color: #aeaeae;
+}
+
+#left-column table{
+    margin-top: 20px;
+}
+#left-column tbody tr {
+    background-color: #ffffff;
+}
+
+#left-column .table-hover tbody tr:hover td, #left-column .table-hover tbody tr:hover th {
+    background-color: #FF8C00;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.repo-button{
+    background-color: #FF8C00;
+    border-style: none;
+    border-radius: 3px;
+    color: white;
+}
+
+#right-column table{
+    margin-top: 20px;
+    width: 95%;
+}
+
+#right-column tbody td,
+#right-column tbody tr,
+#right-column tbody tr th{
+    background-color: #d8edf3;
+}
+
+#right-column tbody td:nth-of-type(odd),
+#right-column body tr:nth-of-type(odd){
+    background-color: #b1d9e7;
+}
+
+thead{
+    background-color: #367ABD;
+    color: #ffffff;
+}
+
+thead th:nth-of-type(even){
+    background-color: #095a8e;
+}
+
+#right-column .table-hover tbody tr:hover td, #right-column .table-hover tbody tr:hover th {
+    background-color: #FF8C00;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.footer-button{
+    margin: 12px 12px 0 0;
+    background-color: #FF8C00;
+    border-style: none;
+    border-radius: 3px;
+    color: white;
+}
+
+/* PROJECT TEMPLATE ============================================================= */
+
+#left-column .list-group{
+    height: 45px;
+    margin-top: 10px;
+}
+
+#left-column .list-group > li{
+    background-color: #095a8e;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 0 0 0;
+}
+#left-column .list-group > li:nth-of-type(even){
+    background-color: #367ABD;
+    color: #ffffff;
+}
+
+#left-column tbody .project-row{
+    background-color: #8bc8db;
+}
+#left-column tbody .project-row > th{
+    background-color: #FF8C00;
+    color: #ffffff;
+}
+
+#left-column tbody .transaction-row{
+    background-color: #ffffff;
+    border: 2px solid #4ba1be;
+    color: #4ba1be;
+}
+#left-column .table-hover tbody .transaction-row:hover td, #left-column .table-hover tbody .transaction-row:hover th{
+    background-color: #4ba1be;
+    border: 2px solid #4ba1be;
+    color: #ffffff;
+}
+
+/* BUTTONS, ERRORS & WARNING MESSAGES =========================================== */
+.back-button{
+    border-radius: 9999px;
+    background-color: #FF8C00;
+    border-style: none;
+    color: white;
+}
+.project-navbar .navbar-nav > li{
+    background-color: transparent;
+    color: white;
+}
+
+.project-navbar .navbar-nav > li > a{
+    display: block;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: -3px;
+}
+
+.project-navbar .navbar-nav > li a:hover{
+    background-color: transparent;
+    color: white;
+}
+
+.project-navbar .navbar-nav > li a:active{
+    background-color: transparent;
+    color: white;
+}
+
+.error-h1{
+    font-weight: 800;
+    font-size: 20px;
+    color: red;
+    padding: 10px;
+}
+
+.error-m{
+    font-weight: 500;
+    font-size: 20px;
+    color: red;
+    padding: 10px;
+}
+
+.warning-message{
+    display: block;
+    visibility: hidden;
+    height: 60px;
+
+    padding: 12px;
+    top: 30px;
+
+    background-color: whitesmoke;
+    border: 1px solid #367ABD;
+
+    box-shadow: 1px 1px 2px #888888;
+}
